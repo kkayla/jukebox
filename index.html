@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SUNDAYjookbx</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>jookBx</h1>
+  <img src= url("atlaslaunch.jpg") />
+    <p>
+      select fromt the drop down menu
+    </p>
+
+    <select name=mylist id=mylist onChange="playAudio();">
+    <option id="1" value="http://www.nasa.gov/mp3/640392main_STS-26_Liftoff.mp3">Liftoff
+    <option id="2" value="http://www.nasa.gov/mp3/640149main_Computers%20are%20in%20Control.mp3">computers
+    <option id="3" value="http://www.nasa.gov/mp3/582362main_Sally-Ride_e-ticket.mp3">eticket
+    </select>
+
+    <br />
+    <br />
+    <audio id= "myaudio" preload="auto" src= "http://www.nasa.gov/mp3/640392main_STS-26_Liftoff.mp3" ></audio>
+    <button id="play" onClick ="playAudio();">play/pause</button>
+    <button onclick="rewindAudio();">rewind</button>
+    <button onclick="forwardAudio();">ff</button>
+    <button onclick="Previous();">prev</button>
+    <button onclick="Next();">next</button>
+    <button onclick="audioStop();">stop</button>
+    <button onclick="restartAudio();">restart</button>
+    <button onclick="document.getElementById('myaudio').volume += 0.1"> volUp</button>
+    <button onclick="document.getElementById('myaudio').volume -= 0.1"> volDown</button>
+    <div id="songSlider" onclick="setSongPosition(this,event)"></div>
+
+
+
+
+
+  <!-- <audio id = "1" src= "http://www.nasa.gov/mp3/640392main_STS-26_Liftoff.mp3">
+  </audio>
+  <audio id = "2" src = "http://www.nasa.gov/mp3/640149main_Computers%20are%20in%20Control.mp3">
+  </audio>
+  <audio id = "3" src = "http://www.nasa.gov/mp3/582362main_Sally-Ride_e-ticket.mp3">
+  </audio> -->
+
+<!-- <button onclick="document.getElementById('player').play()">Play</button>
+<button onclick="document.getElementById('player').pause()">Pause</button> -->
+<!-- <button onclick="document.getElementById('myaudio').volume+=0.1">Volume Up</button> -->
+<!-- <button onclick="document.getElementById('myaudio').volume-=0.1">Volume Down</button> -->
+
+<script src= "script.js"></script>
+
+</body>
+</html>
